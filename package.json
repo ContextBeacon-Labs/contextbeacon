@@ -1,0 +1,26 @@
+{
+  "name": "contextbeacon",
+  "version": "0.1.0",
+  "description": "Local-first repository intelligence for coding agents",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "scan": "pnpm run build && node dist/src/cli.js scan",
+    "generate": "pnpm run build && node dist/src/cli.js generate",
+    "lint": "pnpm run build && node dist/src/cli.js lint",
+    "sync": "pnpm run build && node dist/src/cli.js sync",
+    "test": "pnpm run build && node --test dist/tests/contextbeacon.test.js",
+    "typecheck": "tsc --noEmit",
+    "format": "biome format --write .",
+    "check": "biome check . && tsc --noEmit && pnpm test"
+  },
+  "dependencies": {
+    "zod": "^4.0.17"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.6",
+    "@types/node": "^24.0.10",
+    "typescript": "^5.9.2"
+  }
+}

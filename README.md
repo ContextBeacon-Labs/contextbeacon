@@ -12,6 +12,24 @@ ContextBeacon turns a codebase into an agent-ready package: a compact repo map, 
 - Public repository: `ContextBeacon-Labs/contextbeacon`
 - Organization avatar: custom beacon mark
 - Brand assets: `assets/contextbeacon-icon.svg` and `assets/contextbeacon-icon.png`
+- CLI scaffold: `scan`, `generate`, `lint`, `sync`
+- Generated context files: `AGENTS.md` and `CLAUDE.md`
+
+## Quick start
+
+```bash
+pnpm install
+pnpm run scan
+pnpm run sync
+pnpm test
+```
+
+## CLI
+
+- `scan` prints a repository summary as JSON
+- `generate` renders `AGENTS.md` and `CLAUDE.md` content to stdout
+- `lint` checks for the minimum OSS launch files and scripts
+- `sync` writes the generated context files into the repository root
 
 ## Why this exists
 

@@ -10,6 +10,8 @@
 - Public repository created and transferred into `ContextBeacon-Labs/contextbeacon`
 - Organization avatar updated to the custom ContextBeacon beacon icon
 - Brand assets live in `assets/contextbeacon-icon.svg` and `assets/contextbeacon-icon.png`
+- `AGENTS.md` and `CLAUDE.md` are now generated from the repository scanner
+- The Node-based CLI exposes `scan`, `generate`, `lint`, and `sync`
 
 ## Why these names
 
@@ -34,4 +36,5 @@
 - [x] Transfer the public repository into the organization
 - [x] Add a MIT license
 - [x] Upload a custom organization icon
+- [x] Generate repository context files from the source tree
 - [ ] Add the first issue list for scanner, generator, and linter work
